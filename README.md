@@ -7,8 +7,6 @@ Salah satu framework terpopuler di golang.
 
 Tutorial ada di youtube.com/@awangga di sana beberapa langkah dijelaskan untuk menguasai framework ini.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
 ## Langkah untuk pemula
 
 - [ ] [Hello Word](https://www.youtube.com/watch?v=VkZDZeeuIdY) di golang untuk pertama kali
