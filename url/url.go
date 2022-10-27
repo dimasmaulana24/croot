@@ -6,5 +6,5 @@ import (
 )
 
 func Page(site *gin.Engine) {
-	site.GET("/", controller.Get())
+	site.GET("/", controller.Get)
 }
