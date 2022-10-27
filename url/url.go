@@ -7,4 +7,5 @@ import (
 
 func Page(site *gin.Engine) {
 	site.GET("/", controller.Get)
+	site.POST("/api", controller.PostApi)
 }
