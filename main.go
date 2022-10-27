@@ -1,11 +1,13 @@
 package main
 
 import (
-	"fmt"
+	"gitlab.com/informatics-research-center/croot/url"
 
-	"rsc.io/quote"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	fmt.Println(quote.Go())
+	web := gin.New()
+	url.Page(web)
+	web.Run(":5000")
 }
