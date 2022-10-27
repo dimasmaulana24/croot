@@ -1,13 +1,15 @@
 package main
 
 import (
-	"gitlab.com/informatics-research-center/croot/url"
+	"os"
 
 	"github.com/gin-gonic/gin"
+	"gitlab.com/informatics-research-center/croot/url"
 )
 
 func main() {
+	port := os.Getenv("PORT")
 	web := gin.New()
 	url.Page(web)
-	web.Run(":5000")
+	web.Run(":" + port)
 }
