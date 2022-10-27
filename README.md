@@ -11,7 +11,7 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ## Langkah untuk pemula
 
-- [ ] [Hello Word](https://www.youtube.com/watch?v=VkZDZeeuIdY) untuk pemula
+- [ ] [Hello Word](https://www.youtube.com/watch?v=VkZDZeeuIdY) di golang untuk pertama kali
 - [ ] [Membuat website dengan golang](https://www.youtube.com/watch?v=WwV3ba5KoG4&t=211s) dengan framework gin
-- [ ] [Membuat web service golang] (https://www.youtube.com/watch?v=3ZuT48xfbJc) degan json response
+- [ ] [Membuat web service golang](https://www.youtube.com/watch?v=3ZuT48xfbJc) dengan json response
 
