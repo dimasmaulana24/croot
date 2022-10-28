@@ -1,9 +1,9 @@
 package controller
 
 import (
+	"github.com/InformaticsResearchCenter/croot/helper"
+	"github.com/InformaticsResearchCenter/croot/model"
 	"github.com/gin-gonic/gin"
-	"gitlab.com/informatics-research-center/croot/helper"
-	"gitlab.com/informatics-research-center/croot/model"
 )
 
 func Get(c *gin.Context) {

@@ -1,4 +1,4 @@
-module gitlab.com/informatics-research-center/croot
+module github.com/InformaticsResearchCenter/croot
 
 go 1.19
 
