@@ -12,7 +12,7 @@ func main() {
 	SetPort(&port)
 
 	web := gin.New()
-	web.SetTrustedProxies([]string{"127.0.0.1"})
+	web.SetTrustedProxies(nil)
 
 	url.Page(web)
 	web.Run(":" + port)
