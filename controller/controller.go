@@ -2,11 +2,12 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
+	"gitlab.com/informatics-research-center/croot/helper"
 	"gitlab.com/informatics-research-center/croot/model"
 )
 
 func Get(c *gin.Context) {
-	html := "selamat datang <b>Abang Ganteng</b>"
+	html := "selamat datang <b>Abang Ganteng</b> " + helper.GetIPaddress()
 	c.JSON(200, html)
 }
 
