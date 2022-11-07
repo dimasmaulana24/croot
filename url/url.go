@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Page(site *gin.Engine) {
-	site.GET("/", controller.Get)
-	site.POST("/api", controller.PostApi)
+func Site(page *gin.Engine) {
+	page.GET("/", controller.Get)
+	page.POST("/api", controller.PostApi)
 }

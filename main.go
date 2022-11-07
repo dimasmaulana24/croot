@@ -11,7 +11,7 @@ func main() {
 	web := gin.New()
 	web.SetTrustedProxies(nil)
 
-	url.Page(web)
+	url.Site(web)
 	web.Run(":" + SetPort())
 }
 

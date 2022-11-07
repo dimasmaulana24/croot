@@ -7,8 +7,9 @@ import (
 )
 
 func Get(c *gin.Context) {
-	html := "selamat datang <b>Abang Ganteng</b> " + helper.GetIPaddress()
-	c.JSON(200, html)
+	var response model.Response
+	response.Response = "selamat datang Abang Ganteng IP Server " + helper.GetIPaddress()
+	c.JSON(200, &response)
 }
 
 func PostApi(c *gin.Context) {
