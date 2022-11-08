@@ -3,6 +3,7 @@ package controller
 import (
 	"github.com/InformaticsResearchCenter/croot/helper"
 	"github.com/InformaticsResearchCenter/croot/model"
+	sg "github.com/InformaticsResearchCenter/croot/module/gis/SG"
 	"github.com/gin-gonic/gin"
 )
 
@@ -17,5 +18,14 @@ func PostApi(c *gin.Context) {
 	c.BindJSON(&chat)
 	var response model.Response
 	response.Response = "selamat datang " + chat.Phone_number + " " + chat.Messages
+	c.JSON(200, &response)
+}
+
+func PostGisSG(c *gin.Context) {
+	var gis model.Gis
+	c.BindJSON(&gis)
+	sg.SetAirport(&gis)
+	var response model.Response
+	response.Response = "shp file " + gis.Name + " was created "
 	c.JSON(200, &response)
 }
