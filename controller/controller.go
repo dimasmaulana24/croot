@@ -3,6 +3,7 @@ package controller
 import (
 	"github.com/InformaticsResearchCenter/croot/helper"
 	"github.com/InformaticsResearchCenter/croot/model"
+	_ "github.com/InformaticsResearchCenter/croot/module/gis/SG"
 	"github.com/gin-gonic/gin"
 )
 
