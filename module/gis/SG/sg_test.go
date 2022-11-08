@@ -13,4 +13,5 @@ func TestSetAirport(t *testing.T) {
 		Name:      "seletar airport",
 	}
 	SetAirport(&gis)
+	t.Fatalf(`SetAirport(&gis) = %+v\n`, gis)
 }
