@@ -16,7 +16,7 @@ func SetAirport(gis *model.Gis) {
 		// String attribute field with length 25
 		shp.StringField("NAME", 25),
 	}
-	shape, err := shp.Create("static/shp/seletar.shp", shp.POINT)
+	shape, err := shp.Create("seletar.shp", shp.POINT)
 	if err != nil {
 		log.Fatal(err)
 	}
