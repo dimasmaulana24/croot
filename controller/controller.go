@@ -3,7 +3,6 @@ package controller
 import (
 	"github.com/InformaticsResearchCenter/croot/helper"
 	"github.com/InformaticsResearchCenter/croot/model"
-	sg "github.com/InformaticsResearchCenter/croot/module/gis/SG"
 	"github.com/gin-gonic/gin"
 )
 
@@ -24,7 +23,8 @@ func PostApi(c *gin.Context) {
 func PostGisSG(c *gin.Context) {
 	var gis model.Gis
 	c.BindJSON(&gis)
-	sg.SetAirport(&gis)
+	res, _ := helper.Call("sg.SetAirport", &gis)
+	//sg.SetAirport(&gis)
 	var response model.Response
 	response.Response = "shp file " + gis.Name + " was created "
 	c.JSON(200, &response)
