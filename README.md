@@ -1,6 +1,6 @@
 # croot
 Golang Framework untuk Informatics Research Center. Framework ini dibuat dengan berbasiskan gin. 
-Salah satu framework terpopuler di golang.
+Salah satu framework terpopuler di golang. crot
 
 
 ## Getting started
